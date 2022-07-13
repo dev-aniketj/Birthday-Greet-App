@@ -1,8 +1,9 @@
 package com.aniketjain.birthdaygreet
 
+import android.content.Intent
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.aniketjain.birthdaygreet.Utils.NAME_EXTRA
 import com.aniketjain.birthdaygreet.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -14,10 +15,12 @@ class MainActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        val name = binding.etInput.text.toString()
 
         binding.btnCreateCard.setOnClickListener {
-            Toast.makeText(this, "My name is $name", Toast.LENGTH_LONG).show()
+            val name = binding.etInput.text.toString()
+            val intent: Intent = Intent(this, BirthdayGreetingActivity::class.java)
+            intent.putExtra(NAME_EXTRA, name)
+            startActivity(intent)
         }
 
     }

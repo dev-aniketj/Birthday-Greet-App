@@ -9,6 +9,7 @@
     <color name="white">#FFFFFFFF</color>
 
     <!-- APP COLORS -->
+    <color name="tvTextColor">#353535</color>
     <color name="etTextColor">#232323</color>
     <color name="btnTextColor">#f9f9f9</color>
 </resources>

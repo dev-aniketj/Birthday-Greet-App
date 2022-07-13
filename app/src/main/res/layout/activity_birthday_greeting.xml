@@ -1,11 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".BirthdayGreetingActivity">
 
+    <ImageView
+        android:id="@+id/iv_cake"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cake" />
 
+    <TextView
+        android:id="@+id/tv_birthday_wish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:letterSpacing=".03"
+        android:lineSpacingExtra="3dp"
+        android:text="Wish you a Very Happy Birthday $name 🎂🎊🎉🎉"
+        android:textColor="@color/purple_500"
+        android:textSize="28sp"
+        android:textStyle="bold" />
 
 </RelativeLayout>

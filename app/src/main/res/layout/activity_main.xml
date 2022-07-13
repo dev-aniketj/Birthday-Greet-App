@@ -14,6 +14,7 @@
         android:fontFamily="@font/source_sans_regular"
         android:letterSpacing=".03"
         android:text="Enter your name"
+        android:textColor="@color/tvTextColor"
         android:textSize="24sp"
         android:textStyle="bold" />
 
@@ -28,7 +29,7 @@
         android:ems="10"
         android:gravity="center"
         android:hint="Name"
-        android:inputType="text"
+        android:inputType="textCapSentences"
         android:maxLines="1"
         android:paddingVertical="6dp"
         android:scrollHorizontally="true"
