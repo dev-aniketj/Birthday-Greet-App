@@ -27,7 +27,6 @@
         android:layout_marginTop="16dp"
         android:background="@drawable/input_bg"
         android:ems="10"
-        android:gravity="center"
         android:hint="Name"
         android:inputType="textCapSentences"
         android:maxLines="1"
